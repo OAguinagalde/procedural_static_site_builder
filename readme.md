@@ -102,5 +102,4 @@ Currently it only works with `bun` because I have no clue how to make `node` hap
 # TODO
 
 * make a better example
-* allow markdown literals to be indented without losing formatting
 * fix random commas `,` appearing, I have no clue why

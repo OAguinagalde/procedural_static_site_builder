@@ -1,4 +1,4 @@
-import {md, html} from './lib.mjs';
+import {md, html} from './lib.ts';
 import {writeFile} from 'fs';
 
 const template = ({title, tags, content}) => html`
@@ -21,15 +21,16 @@ const template = ({title, tags, content}) => html`
 `;
 
 const blog = md`
-This is a blog.
 
-Text, text, text, ...
+    This is a blog.
 
-\`\`\`js
-const a = 56;
-\`\`\`
+    Text, text, text, ...
 
-End of blog
+    \`\`\`js
+    const a = 56;
+    \`\`\`
+
+    End of blog
 `
 
 const index_html = html`
