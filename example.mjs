@@ -1,4 +1,4 @@
-import {md, html} from './lib.ts';
+import {md, html} from './lib.mjs';
 import {writeFile} from 'fs';
 
 const template = ({title, tags, content}) => html`

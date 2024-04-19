@@ -28,15 +28,16 @@ const template = ({title, tags, content}) => html`
 `;
 
 const blog = md`
-This is a blog.
 
-Text, text, text, ...
+    This is a blog.
 
-\`\`\`js
-const a = 56;
-\`\`\`
+    Text, text, text, ...
 
-End of blog
+    \`\`\`js
+    const a = 56;
+    \`\`\`
+
+    End of blog
 `
 
 const index_html = html`
@@ -55,7 +56,7 @@ writeFile('index.html', "\ufeff" + index_html, err => {
 });
 ```
 
-Build the website with `bun example.js`.
+Build the website with `bun example.mjs` or `node example.mjs`.
 
 # htm
 
@@ -94,10 +95,6 @@ The `vs-code` plugin `lit-html` provides syntax highlighting for html inside `js
 # md
 
 `md` uses `marked` to parse `markdown` and then returns a valid `html` representation of the `markdown` text.
-
-# bun
-
-Currently it only works with `bun` because I have no clue how to make `node` happy and `bun` is ok with everything.
 
 # TODO
 

@@ -4,7 +4,7 @@ import marked from './marked/marked.cjs';
 
 const html = htm.bind(vhtml);
 
-const calc_offset = (str: string): number => {
+const calc_offset = (str) => {
     let white_characters = 0;
     const len = str.length;
     for (let i = 0; i < len; i++) {
@@ -47,7 +47,7 @@ const calc_offset = (str: string): number => {
  * 
  * and still render properly
  */
-const md = (strings: TemplateStringsArray, ...args: string[]): string => {
+const md = (strings, ...args) => {
     let result = "";
     for (let i = 0; i < strings.length; i++) {
         result += strings[i];
